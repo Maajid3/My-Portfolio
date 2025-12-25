@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "../src/components/Header";
+import Projects from "../src/components/Projects";
+import Contact from "../src/components/Contact";
+import LandingPage from "./components/LandingPage";
+import ChakraSection from "./components/ChakraSection";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="landing-container">
+        <ChakraSection>
+          <LandingPage />
+        </ChakraSection>
+      </div>
+      <Header />
+      <Projects />
+      <Contact />
+      <Footer/>
     </div>
   );
 }

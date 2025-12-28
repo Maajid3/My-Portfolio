@@ -1,5 +1,3 @@
-import Resume from "../assets/MaajidResume.pdf";
-
 export default function Footer() {
   return (
     <>
@@ -26,7 +24,7 @@ export default function Footer() {
           <div className="nav-links">
             <p>Contents Links:</p>
             <a href="#landing-page">Main</a>
-            <a href={Resume} target="_blank" rel="noopener noreferrer">
+            <a href="/MaajidResume.pdf" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
             <a href="#project">Projects</a>
@@ -35,7 +33,7 @@ export default function Footer() {
 
           <div className="social-links">
             <p>Social Account Links :</p>
-            <a href="https://www.linkedin.com/in/maajidali03" target="_blank">
+            <a href="https://www.linkedin.com/in/maajidali03" target="_blank" rel="noopener noreferrer" >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -48,7 +46,7 @@ export default function Footer() {
               </svg>
               LinkedIN
             </a>
-            <a href="https://github.com/Maajid3" target="_blank">
+            <a href="https://github.com/Maajid3" target="_blank" rel="noopener noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

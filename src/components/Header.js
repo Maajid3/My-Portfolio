@@ -1,5 +1,4 @@
 import "./components.css";
-import Resume from "../MaajidResume.pdf";
 
 export default function Headers() {
   return (
@@ -9,7 +8,7 @@ export default function Headers() {
           <a href="#project">Projects</a>
         </li>
         <li>
-          <a href={Resume} target="_blank" rel="noopener noreferrer">
+          <a href="/MaajidResume.pdf" target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </li>

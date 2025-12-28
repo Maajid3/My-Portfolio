@@ -1,5 +1,5 @@
 import "./components.css";
-import Resume from "../assets/MaajidResume.pdf";
+import Resume from "../MaajidResume.pdf";
 
 export default function Headers() {
   return (

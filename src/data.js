@@ -9,7 +9,7 @@ import weather2 from "./assets/weather-2-ss.png";
 import travelappimg from "./assets/travel-web-app.jpg";
 import blogImg from "./assets/blog.webp";
 
-export default [
+const projectsData = [
   {
     id: 1,
     projectName: "Smart Bin: Monitoring and Tracking System",
@@ -53,3 +53,5 @@ export default [
     projectImg: [blogImg],
   },
 ];
+
+export default projectsData;

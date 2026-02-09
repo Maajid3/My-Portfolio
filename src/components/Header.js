@@ -8,7 +8,7 @@ export default function Headers() {
           <a href="#project">Projects</a>
         </li>
         <li>
-          <a href="/MaajidResume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Maajid_Ali_Frontend_Developer_React.pdf" target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </li>

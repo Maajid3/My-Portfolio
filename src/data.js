@@ -7,7 +7,7 @@ import ecommerce3 from "./assets/ecommerce-3-ss.png";
 import weather1 from "./assets/weather-1-ss.png";
 import weather2 from "./assets/weather-2-ss.png";
 import travelappimg from "./assets/travel-web-app.jpg";
-import blogImg from "./assets/blogImg.webp";
+import blogImg from "./assets/blog.webp";
 
 export default [
   {

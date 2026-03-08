@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="nav-links">
             <p>Contents Links:</p>
             <a href="#landing-page">Main</a>
-            <a href="/Maajid_Ali_Frontend_Developer_React.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Maajid_Ali_Developer.pdf" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
             <a href="#project">Projects</a>

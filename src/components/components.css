@@ -37,10 +37,15 @@
   border-radius: 20px;
   width: 20rem;
   height: 50px;
-  position: absolute;
+  position: fixed;
   right: 5rem;
-  top: 2rem;
-  animation: top-down 1.2s ease-out forwards;
+  top: 1.5rem;
+  transition: transform 0.5s ease-in;
+  animation: top-down 1.2s ease-out;
+}
+
+.nav-hidden {
+  transform: translateY(-200%);
 }
 
 .nav-bar a {
@@ -360,12 +365,11 @@ textarea {
     font-size: 0.4rem;
     font-weight: 900;
   }
-
 }
 
 /* mobile landscape */
 @media (min-width: 451px) and (max-width: 767px) {
-    /* project */
+  /* project */
   .project {
     grid-template-columns: repeat(1, minmax(50px, 1fr));
   }
@@ -373,7 +377,7 @@ textarea {
 
 /* tablet portrait */
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* project */
+  /* project */
   .project {
     grid-template-columns: repeat(2, minmax(50px, 1fr));
   }

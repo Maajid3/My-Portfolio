@@ -1,75 +1,126 @@
-<<<<<<< HEAD
-# My-Portfolio
-A modern, responsive portfolio website developed with React and Supabase to showcase my projects, skills, and experience.
-=======
-# Getting Started with Create React App
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,50:004e92,100:000428&height=200&section=header&text=Maajid%20Ali%20%E2%80%94%20Portfolio&fontSize=42&fontColor=ffffff&fontAlignY=35&animation=fadeIn" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Light%20Skin%20Tone.png" width="10%">
 
-In the project directory, you can run:
+A modern, responsive developer portfolio built with React 19, featuring animated gradients, glassmorphism UI, scroll-driven animations, and a Supabase-powered contact system.
 
-### `npm start`
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://my-portfolio3-topaz.vercel.app/)
+[![GitHub](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Maajid3/My-Portfolio)
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=4E92F7&center=true&vCenter=true&width=500&lines=Frontend+Developer;React.js+%7C+UI+Developer;Built+with+%E2%9D%A4%EF%B8%8F+and+JavaScript" alt="Typing SVG" />
 
-### `npm test`
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
 
-### `npm run build`
+## Overview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A single-page portfolio application that showcases my projects, skills, and provides a direct way to get in touch. The site is designed to leave a strong first impression with a living, animated hero background and smooth interactions throughout.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Key Highlights
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Animated Aurora Hero** — A full-viewport hero section with 10+ layered radial gradients animated via CSS `@property`, creating an organic, morphing aurora effect.
+- **Glassmorphism Navbar** — A floating, translucent navigation bar with backdrop blur that auto-hides on scroll down and reappears on scroll up.
+- **Scroll-Driven Animations** — Project cards and contact sections fade and scale in as they enter the viewport using native CSS scroll-driven animations.
+- **Infinite Image Carousel** — Projects with multiple screenshots display a seamless, auto-scrolling marquee built with pure CSS.
+- **Contact Form with Supabase** — A fully validated contact form that stores submissions directly in a Supabase database, with real-time feedback via React Query mutations.
+- **Fully Responsive** — Optimized layouts for mobile, tablet, and desktop with four CSS breakpoints.
 
-### `npm run eject`
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<div align="center">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Chakra UI](https://img.shields.io/badge/Chakra_UI-319795?style=for-the-badge&logo=chakraui&logoColor=white)
+![React Query](https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+</div>
 
-## Learn More
+| Layer             | Technology                           |
+| :---------------- | :----------------------------------- |
+| **Framework**     | React 19 (Create React App)          |
+| **UI Components** | Chakra UI v3                         |
+| **Styling**       | CSS3 with Custom Properties, Emotion |
+| **State & Data**  | TanStack React Query v5              |
+| **Backend**       | Supabase (PostgreSQL)                |
+| **Routing**       | React Router DOM v7                  |
+| **HTTP**          | Axios, Supabase JS Client            |
+| **Deployment**    | Vercel                               |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+```
+src/
+├── App.js                  # Root layout — assembles all sections
+├── App.css                 # Animated hero gradient (CSS @property)
+├── index.js                # Entry point — React 19, Router, QueryClient
+├── data.js                 # Portfolio project data
+├── api/
+│   └── Submit.js           # Supabase insert for contact form
+├── assets/                 # Project screenshots & profile images
+├── client/
+│   └── supabase_Client.js  # Supabase client initialization
+└── components/
+    ├── Header.js           # Scroll-aware floating navbar
+    ├── LandingPage.jsx     # Hero section with avatar
+    ├── ChakraSection.jsx   # Chakra UI provider wrapper
+    ├── Projects.js         # Project cards grid + image carousel
+    ├── Contact.jsx         # Validated contact form
+    ├── Footer.jsx          # Links, socials, copyright
+    └── components.css      # All component styles & responsive breakpoints
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-### Analyzing the Bundle Size
+## Featured Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+|  #  | Project                              | Description                                                   |
+| :-: | :----------------------------------- | :------------------------------------------------------------ |
+|  1  | **Smart Bin: Monitoring & Tracking** | IoT system using Raspberry Pi, Flask, PostgreSQL, and Android |
+|  2  | **Weather Forecast Website**         | React app consuming a weather API with dynamic UI             |
+|  3  | **E-Commerce Website**               | Full-stack React + Django with auth, cart, and checkout       |
+|  4  | **Amazon Clone**                     | Static React frontend replicating the Amazon UI               |
+|  5  | **Travel Website**                   | React.js travel destinations application                      |
+|  6  | **Blog Website**                     | Flask + HTML/CSS blogging platform                            |
 
-### Making a Progressive Web App
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Responsive Breakpoints
 
-### Advanced Configuration
+| Device           | Width          | Layout                              |
+| :--------------- | :------------- | :---------------------------------- |
+| Mobile Portrait  | 320px — 480px  | Single-column grid, centered navbar |
+| Mobile Landscape | 451px — 767px  | Single-column grid                  |
+| Tablet           | 768px — 1024px | Two-column grid                     |
+| Desktop          | > 1024px       | Three-column grid                   |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-### Deployment
+## Connect
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<div align="center">
 
-### `npm run build` fails to minify
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maajidali00003@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/maajidali03)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Maajid3)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 509d827 (Initialize project using Create React App)
+</div>
+
+<br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,50:004e92,100:000428&height=120&section=footer" />

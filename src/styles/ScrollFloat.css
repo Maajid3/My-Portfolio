@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lusitana:wght@400;700&display=swap");
+
+.scroll-float {
+  overflow: hidden;
+}
+
+.scroll-float-text {
+  display: inline-block;
+  font-size: clamp(1.6rem, 5vw, 10rem);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  color: rgb(66, 66, 66);
+  font-family: "Lusitana", serif;
+  padding: 0.3em;
+}
+
+.char {
+  display: inline-block;
+}

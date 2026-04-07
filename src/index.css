@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Doto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(5, 5, 46);
+  overflow-x: hidden;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}

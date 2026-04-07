@@ -4,11 +4,68 @@
   align-items: center;
   color: white;
 }
-.hero-ui{
+.hero-ui {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero-image-shell {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: rgba(14, 33, 82, 0.7);
+}
+
+.hero-image-skeleton {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.25) 50%,
+      rgba(255, 255, 255, 0) 70%
+    ),
+    linear-gradient(145deg, #1f3577, #1a2b61 45%, #263f89 100%);
+  background-size:
+    220% 100%,
+    100% 100%;
+  animation: hero-image-shimmer 1.25s linear infinite;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  display: block;
+  transition: opacity 280ms ease-in;
+}
+
+.hero-image.is-loaded {
+  opacity: 1;
+}
+
+@keyframes hero-image-shimmer {
+  0% {
+    background-position:
+      200% 0,
+      0 0;
+  }
+  100% {
+    background-position:
+      -40% 0,
+      0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-image-skeleton {
+    animation: none;
+  }
 }
 
 .landing-ui h1 {
@@ -354,7 +411,6 @@ textarea {
 .contact-container button:hover {
   background-color: rgb(24, 24, 24);
   color: white;
-
 }
 
 .contact-container button:focus {
@@ -379,7 +435,7 @@ textarea {
   background-color: rgb(15, 15, 73);
   color: #ffffff;
   border-top: thin solid rgba(110, 110, 110, 0.264);
-  padding: 0.6em ;
+  padding: 0.6em;
   text-align: center;
 }
 .footer {
@@ -440,7 +496,7 @@ textarea {
   animation: line 7s ease forwards infinite;
 }
 
-.copyright{
+.copyright {
   text-align: center;
 }
 

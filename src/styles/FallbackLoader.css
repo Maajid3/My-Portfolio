@@ -1,0 +1,136 @@
+.fallback-loader {
+  --loader-accent: #7ed2ff;
+  --loader-accent-soft: #59b7ff;
+  --loader-bg: rgba(4, 20, 53, 0.72);
+  --loader-glow: rgba(126, 210, 255, 0.22);
+
+  min-height: 160px;
+  width: 100%;
+  margin: 0.75rem 0;
+  border: 1px solid rgba(126, 210, 255, 0.25);
+  border-radius: 18px;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(93, 207, 255, 0.14),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 80% 75%,
+      rgba(44, 117, 255, 0.17),
+      transparent 45%
+    ),
+    var(--loader-bg);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 12px 35px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  overflow: hidden;
+}
+
+.fallback-loader--compact {
+  min-height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border-color: rgba(126, 210, 255, 0.4);
+  display: inline-flex;
+  flex-direction: row;
+  gap: 0.45rem;
+  background: rgba(4, 20, 53, 0.85);
+  box-shadow: 0 0 0 1px rgba(126, 210, 255, 0.16);
+}
+
+.fallback-loader__orbital {
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+
+.fallback-loader--compact .fallback-loader__orbital {
+  width: 18px;
+  height: 18px;
+}
+
+.fallback-loader__core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--loader-accent);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 16px var(--loader-glow);
+}
+
+.fallback-loader--compact .fallback-loader__core {
+  width: 5px;
+  height: 5px;
+}
+
+.fallback-loader__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.fallback-loader__ring--one {
+  border-top-color: var(--loader-accent);
+  border-left-color: var(--loader-accent-soft);
+  animation: orbital-spin 1s linear infinite;
+}
+
+.fallback-loader__ring--two {
+  inset: 6px;
+  border-bottom-color: rgba(126, 210, 255, 0.9);
+  border-right-color: rgba(89, 183, 255, 0.8);
+  animation: orbital-spin-reverse 1.4s linear infinite;
+}
+
+.fallback-loader--compact .fallback-loader__ring {
+  border-width: 1px;
+}
+
+.fallback-loader--compact .fallback-loader__ring--two {
+  inset: 2px;
+}
+
+.fallback-loader__label {
+  margin: 0;
+  color: #dff3ff;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 10px rgba(56, 166, 255, 0.25);
+}
+
+.fallback-loader--compact .fallback-loader__label {
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+
+@keyframes orbital-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbital-spin-reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fallback-loader__ring--one,
+  .fallback-loader__ring--two {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+  }
+}

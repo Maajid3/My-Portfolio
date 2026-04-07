@@ -1,10 +1,15 @@
+import { Toaster } from "react-hot-toast";
+import { lazy, Suspense } from "react";
+
 import "./App.css";
 import Header from "./components/Header";
-import Projects from "./components/Projects";
-import Contact from "../src/components/Contact";
+import FallbackLoader from "./components/FallbackLoader";
 import LandingPage from "./components/LandingPage";
-import Footer from "./components/Footer";
-import { Toaster } from "react-hot-toast";
+
+const Projects = lazy(() => import("./components/Projects"));
+const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
+const sectionFallback = <FallbackLoader message="Loading section..." />;
 
 function App() {
   return (
@@ -14,9 +19,15 @@ function App() {
         <LandingPage />
       </div>
       <Header />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Suspense fallback={sectionFallback}>
+        <Projects />
+      </Suspense>
+      <Suspense fallback={sectionFallback}>
+        <Contact />
+      </Suspense>
+      <Suspense fallback={sectionFallback}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../styles/components.css";
 import { useMutation } from "@tanstack/react-query";
-import { Submit } from "../api/Submit";
 import ElectricBorder from "./ElectricBorder";
 import toast from "react-hot-toast";
 
@@ -21,7 +20,10 @@ function Contact() {
     !names || !email || !phone || !purpose || message.length < 25;
 
   const mutation = useMutation({
-    mutationFn: Submit,
+    mutationFn: async (payload) => {
+      const { Submit } = await import("../api/Submit");
+      return Submit(payload);
+    },
     onSuccess: () => {
       console.log("Form Submitted");
       toast.success(" Submitted Successfully");

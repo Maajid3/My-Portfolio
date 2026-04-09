@@ -173,14 +173,12 @@
 
 .project-container {
   color: rgb(255, 255, 255);
-  /* background-color: rgb(41, 41, 41); */
   width: auto;
-  height: 600px;
+  height: 700px;
   min-height: 540px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  /* margin: 0.6em 1.8em; */
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -207,19 +205,20 @@
 
 .slideshow {
   width: 100%;
+  height: 40%;
   overflow: hidden;
 }
 
 .slide-track {
   display: flex;
   width: calc(200%);
+  height: 100%;
   animation: scroll-left 10s linear infinite;
 }
 
 .slide-track img {
   width: 100%;
-  min-width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -521,11 +520,9 @@ textarea {
   .project {
     grid-template-columns: repeat(1, minmax(50px, 1fr));
     gap: 1rem;
-    padding: 1.5rem 0.2rem;
   }
 
   .project-container {
-    margin: 0.8em 0.9em;
     min-height: 500px;
   }
 
